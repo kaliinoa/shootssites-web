@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – ShootsSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shoots<span>Sites</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="process.html">Process</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Let's talk story</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HERO ─────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Let's talk story</span>
+      </div>
+      <h1>Ready to get<br>your business <em>found?</em></h1>
+      <p class="page-hero-sub">Free quote. No obligation. No tech knowledge needed. Fill in the form and we'll be in touch within 24 hours.</p>
+    </div>
+  </div>
+
+  <!-- ── CONTACT LAYOUT ────────────────────────────── -->
+  <section>
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="reveal">
+        <h3>What to expect</h3>
+        <p>You fill in the form, we read it carefully, and reach out to schedule a relaxed 20-minute call. No hard sell, no jargon — just a real conversation about your business and what a website could do for it.</p>
+        <p>If we think we're a good fit, we'll send you a clear quote with exactly what we'd build, the timeline, and the cost. Everything in plain English.</p>
+
+        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(28,26,24,0.08);">
+          <div class="contact-detail">
+            <span class="contact-detail-label">Email</span>
+            <a href="mailto:aloha@shootssites.com" class="contact-detail-val">aloha@shootssites.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label">Response</span>
+            <span class="contact-detail-val" style="cursor:default;">Within 24 hours, usually same day</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label">Quote</span>
+            <span class="contact-detail-val" style="cursor:default;">Always free, always clear</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-label">Location</span>
+            <span class="contact-detail-val" style="cursor:default;">Hawaii — all islands</span>
+          </div>
+        </div>
+
+        <!-- What happens next -->
+        <div class="what-next">
+          <h4>After you send the form</h4>
+          <div class="next-steps">
+            <div class="next-step">
+              <span class="next-step-n">01</span>
+              <p>We read your message and get a feel for your business. We may reply with a couple of quick questions to prepare for the call.</p>
+            </div>
+            <div class="next-step">
+              <span class="next-step-n">02</span>
+              <p>We schedule a 20-minute call — at your convenience. You don't need to prepare anything. Just talk to us like you would a neighbor.</p>
+            </div>
+            <div class="next-step">
+              <span class="next-step-n">03</span>
+              <p>We send you a written quote: what we'll build, the timeline, and the price. No obligation to proceed.</p>
+            </div>
+            <div class="next-step">
+              <span class="next-step-n">04</span>
+              <p>If you're happy, we kick off. Your site could be live in as little as 7 days from here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap reveal">
+        <div class="contact-form-head">
+          <h3>Talk story with us</h3>
+          <p>Takes about 2 minutes. The more detail the better — but whatever you share is a start.</p>
+        </div>
+        <form class="contact-form-inner" action="mailto:aloha@shootssites.com" method="get" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Your name</label>
+              <input type="text" name="name" placeholder="e.g. Kai Akana">
+            </div>
+            <div class="form-field">
+              <label>Your business</label>
+              <input type="text" name="business" placeholder="e.g. Akana Plumbing">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Island</label>
+              <select name="island">
+                <option value="" disabled selected>Which island?</option>
+                <option>Oahu</option>
+                <option>Maui</option>
+                <option>Big Island</option>
+                <option>Kauai</option>
+                <option>Molokai</option>
+                <option>Lanai</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Your trade</label>
+              <input type="text" name="trade" placeholder="e.g. Plumber, Electrician">
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com">
+          </div>
+          <div class="form-field">
+            <label>Which package interests you?</label>
+            <select name="package">
+              <option value="" disabled selected>Choose a package</option>
+              <option>Starter ($499)</option>
+              <option>Starter + Care ($499 + $99/mo)</option>
+              <option>Growth ($999)</option>
+              <option>Not sure — help me decide</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Tell us about your business</label>
+            <textarea name="message" placeholder="What do you do, who do you serve, and what's the main thing you want customers to do when they land on your site? Whatever feels relevant — we'll take it from here." style="height:130px;"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Shoots, let's start! →</button>
+          <p class="form-note">Or email us directly: aloha@shootssites.com · We respond within 24 hours.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────── -->
+  <section style="background:var(--foam-warm);padding:5rem 3rem;" id="faq">
+    <div style="max-width:760px;margin:0 auto;">
+      <div class="sec-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Common questions</span>
+      </div>
+      <h2 class="reveal">Before you reach out.</h2>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-q">
+            I'm not tech-savvy at all. Is that okay?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>That's exactly who we built this for. You don't need to know anything about websites, domains, hosting, or design. You just tell us about your business, and we handle the rest. We explain everything in plain language, and we never make you feel dumb for asking a question.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            What if I don't have photos or a logo yet?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>No problem. We can source high-quality licensed photos that fit your trade and location while you build your own photo library. For logos, we can use a clean text-based logo to start — or refer you to an affordable local designer if you want something custom. Neither is a blocker to getting started.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            How long does it actually take?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Most Starter sites go from first call to live in 7 days. Growth sites typically take 10 days. The timeline depends mostly on how quickly you can give us feedback during the review stage — the faster you respond, the faster we move. We'll never rush you, but we won't drag it out either.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Will I have to maintain it myself?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>On the Care Plan, no — we handle all updates, monitoring, and maintenance for you. On a one-time build, the site will run without much maintenance, but if you want to update text or photos yourself we can set you up with a simple CMS. Or just email us and we can usually handle small changes quickly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            I already have a website. Can you improve it?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. If your current site looks outdated, loads slowly, or isn't showing up in search results, we can assess it and give you an honest recommendation — whether that's a full rebuild or targeted improvements. Send us the URL in your message and we'll take a look.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Shoots<span>Sites</span></a>
+        <p>Professional websites for Hawaii tradespeople and small businesses. Fast. Honest. Built with aloha.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pricing.html">Starter Website</a></li>
+          <li><a href="pricing.html">Growth Package</a></li>
+          <li><a href="pricing.html">Care Plans</a></li>
+          <li><a href="contact.html">Free Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aloha@shootssites.com">aloha@shootssites.com</a></li>
+          <li><a href="contact.html">Talk Story Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 ShootsSites · Built with aloha for Hawaii</p>
+      <a href="mailto:aloha@shootssites.com" class="footer-email">aloha@shootssites.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
