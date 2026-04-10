@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – ShootsSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shoots<span>Sites</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="process.html">Process</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Let's talk story</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HERO ─────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Our work</span>
+      </div>
+      <h1>Built for the<br><em>community.</em></h1>
+      <p class="page-hero-sub">ShootsSites is just getting started. These are the trades and industries we're ready to build for — be among the first on your island to claim your spot online.</p>
+    </div>
+  </div>
+
+  <!-- ── EARLY ADOPTER CALLOUT ─────────────────────── -->
+  <div style="background:var(--teal-deep);padding:2rem 3rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--foam);">Be our first client in your trade.</p>
+        <p style="font-size:0.82rem;color:rgba(250,248,244,0.55);margin-top:0.3rem;">Your work becomes our showcase — featured front and center on this page.</p>
+      </div>
+      <a href="contact.html" class="btn-primary" style="background:var(--foam);color:var(--teal-deep);flex-shrink:0;">Claim your spot →</a>
+    </div>
+  </div>
+
+  <!-- ── PORTFOLIO GRID ────────────────────────────── -->
+  <section>
+    <div class="section-row" style="margin-bottom:2rem;">
+      <div>
+        <div class="sec-eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">Browse by trade</span>
+        </div>
+        <h2 class="reveal">What we <em>build.</em></h2>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="portfolio-filter reveal">
+      <button class="filter-btn active" data-filter="all">All trades</button>
+      <button class="filter-btn" data-filter="plumbing">Plumbing</button>
+      <button class="filter-btn" data-filter="electrical">Electrical</button>
+      <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+      <button class="filter-btn" data-filter="roofing">Roofing</button>
+      <button class="filter-btn" data-filter="hvac">HVAC</button>
+      <button class="filter-btn" data-filter="contracting">Contracting</button>
+      <button class="filter-btn" data-filter="cleaning">Cleaning</button>
+      <button class="filter-btn" data-filter="painting">Painting</button>
+    </div>
+
+    <div class="portfolio-full-grid">
+
+      <div class="portfolio-card reveal" data-trade="plumbing">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#e8f4f4,#d0e8e8);">
+          <div class="portfolio-thumb-inner">Plumbing</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Plumbing · Oahu</div>
+          <h3>4-page site built to convert searchers into callers</h3>
+          <p>Service list, contact form, Google Maps, click-to-call button. Be the plumber that shows up when homeowners need help fast.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="electrical">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#f4f0e0,#ede4c8);">
+          <div class="portfolio-thumb-inner">Electrical</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Electrical · Maui</div>
+          <h3>Stand out from every electrician who relies on word of mouth</h3>
+          <p>Mobile-first design with instant quote form, licensing credentials, and a photo gallery of past work.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="landscaping">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#e8f0e4,#d0e4c8);">
+          <div class="portfolio-thumb-inner">Landscaping</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Landscaping · Big Island</div>
+          <h3>Show your work — before & after portfolio that sells itself</h3>
+          <p>Visual portfolio with before/after sliders, review showcase, and Google Business Profile setup.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="roofing">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#f0e8e4,#e4d4cc);">
+          <div class="portfolio-thumb-inner">Roofing</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Roofing · Kauai</div>
+          <h3>Emergency-ready site with 24/7 call prompt and service area</h3>
+          <p>Service area map, emergency contact feature, insurance info, and a project gallery showing roof types you work on.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="hvac">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#e4ecf4,#ccdce8);">
+          <div class="portfolio-thumb-inner">HVAC</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">HVAC · Oahu</div>
+          <h3>AC repair and installation — the site your customers expect</h3>
+          <p>Service menu, seasonal promotions section, maintenance plan details, and a fast-loading mobile experience for hot-day emergencies.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="contracting">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#f4ece4,#e8ddd0);">
+          <div class="portfolio-thumb-inner">Contracting</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">General Contractor · Maui</div>
+          <h3>Project portfolio that proves your range and quality</h3>
+          <p>Full project gallery with categories, licensing and insurance details, estimate request form, and testimonials.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="cleaning">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#eef4f4,#ddeee4);">
+          <div class="portfolio-thumb-inner">Cleaning</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Cleaning Services · Oahu</div>
+          <h3>Booking-ready site with service packages and pricing</h3>
+          <p>Service tiers, a booking-friendly contact form, residential/commercial split, and review showcase. Built to convert.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="painting">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#f4eef4,#e8dde8);">
+          <div class="portfolio-thumb-inner">Painting</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Painting · Big Island</div>
+          <h3>Color inspiration gallery with interior and exterior work</h3>
+          <p>Visual portfolio organized by project type, free estimate form, service island selector, and before/after gallery.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-trade="plumbing">
+        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#e4f0f4,#cce0e8);">
+          <div class="portfolio-thumb-inner">Pest Control</div>
+          <span class="portfolio-coming">Your site here</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-industry">Pest Control · Kauai</div>
+          <h3>Trust-first site that addresses the pest problems specific to Hawaii</h3>
+          <p>Hawaii-specific pest info, treatment plan details, service guarantee section, and an easy scheduling form.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WHAT'S INCLUDED ───────────────────────────── -->
+  <section style="background:var(--basalt);padding:5rem 3rem;">
+    <div style="max-width:900px;margin:0 auto;">
+      <div class="sec-eyebrow reveal" style="justify-content:center">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text" style="color:var(--sand)">What every site includes</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h2 class="reveal" style="color:var(--foam);text-align:center;">Every project.<br><em>Every time.</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;margin-top:3rem;background:rgba(250,248,244,0.07);border:1.5px solid rgba(250,248,244,0.07);">
+        <div class="problem-cell reveal">
+          <h3>Mobile-first</h3>
+          <p>Over 70% of local searches happen on phones. Every site we build looks and works great on any screen size.</p>
+        </div>
+        <div class="problem-cell reveal">
+          <h3>Fast loading</h3>
+          <p>Slow sites lose customers. We build lean, fast-loading sites — not bloated page builders that take 5 seconds to load.</p>
+        </div>
+        <div class="problem-cell reveal">
+          <h3>SEO ready</h3>
+          <p>Proper page titles, meta descriptions, local keywords, and structured data so Google knows who you are and where you work.</p>
+        </div>
+        <div class="problem-cell reveal">
+          <h3>Click to call</h3>
+          <p>One tap from the phone screen to your number. Simple, but it's the most important conversion element on a trades site.</p>
+        </div>
+        <div class="problem-cell reveal">
+          <h3>Contact form</h3>
+          <p>A simple form that sends inquiries straight to your inbox. No lost leads, no missed messages in a social media DM.</p>
+        </div>
+        <div class="problem-cell reveal">
+          <h3>Secure HTTPS</h3>
+          <p>SSL certificate included so customers see the padlock — and Google gives you the trust signals that help you rank.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ──────────────────────────────────── -->
+  <div class="cta-band">
+    <div class="sec-eyebrow reveal" style="justify-content:center">
+      <span class="eyebrow-line"></span>
+      <span class="eyebrow-text" style="color:rgba(250,248,244,0.5)">Be first</span>
+      <span class="eyebrow-line"></span>
+    </div>
+    <h2 class="reveal">Your business could be<br><em>featured right here.</em></h2>
+    <p class="reveal">We're building our portfolio — be one of our first clients and get featured on this page. Early clients get the same quality, the same price, and the satisfaction of being first.</p>
+    <div class="cta-actions reveal">
+      <a href="contact.html" class="btn-primary">Claim your spot →</a>
+      <a href="pricing.html" class="btn-ghost">See pricing</a>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Shoots<span>Sites</span></a>
+        <p>Professional websites for Hawaii tradespeople and small businesses. Fast. Honest. Built with aloha.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pricing.html">Starter Website</a></li>
+          <li><a href="pricing.html">Growth Package</a></li>
+          <li><a href="pricing.html">Care Plans</a></li>
+          <li><a href="contact.html">Free Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aloha@shootssites.com">aloha@shootssites.com</a></li>
+          <li><a href="contact.html">Talk Story Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 ShootsSites · Built with aloha for Hawaii</p>
+      <a href="mailto:aloha@shootssites.com" class="footer-email">aloha@shootssites.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

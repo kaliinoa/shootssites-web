@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing – ShootsSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Shoots<span>Sites</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="process.html">Process</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Let's talk story</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HERO ─────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Investment</span>
+      </div>
+      <h1>Honest pricing.<br><em>No surprises.</em></h1>
+      <p class="page-hero-sub">Simple, flat fees. No hourly billing, no hidden costs, no scope creep. You know exactly what you're getting and what it costs before we start.</p>
+      <div class="page-hero-actions">
+        <a href="contact.html" class="btn-primary">Get a free quote →</a>
+        <a href="#faq" class="btn-ghost">Read the FAQ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRICING GRID ───────────────────────────────── -->
+  <section>
+    <div class="pricing-grid">
+      <div class="price-cell reveal">
+        <h3>Starter</h3>
+        <div class="price-amount">$499</div>
+        <div class="price-period">one-time build fee · no monthly required</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li>4-page professional website</li>
+          <li>Mobile-first, responsive design</li>
+          <li>Contact form with email delivery</li>
+          <li>Google Maps integration</li>
+          <li>Basic on-page SEO</li>
+          <li>SSL certificate (HTTPS)</li>
+          <li>Domain connection assistance</li>
+          <li>3 rounds of revisions</li>
+          <li>Launch in 7 days</li>
+        </ul>
+        <a href="contact.html" class="price-btn">Get started</a>
+      </div>
+      <div class="price-cell featured reveal">
+        <div class="price-badge">Most popular</div>
+        <h3>Starter + Care</h3>
+        <div class="price-amount">$499</div>
+        <div class="price-period">build fee + $99/month · cancel anytime</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li>Everything in Starter</li>
+          <li>Monthly content updates (text, photos)</li>
+          <li>24/7 uptime monitoring</li>
+          <li>Monthly performance report</li>
+          <li>Priority email support</li>
+          <li>Annual design refresh</li>
+          <li>Security updates handled</li>
+          <li>Hosting included</li>
+          <li>Unlimited small edits</li>
+        </ul>
+        <a href="contact.html" class="price-btn">Get started</a>
+      </div>
+      <div class="price-cell reveal">
+        <h3>Growth</h3>
+        <div class="price-amount">$999</div>
+        <div class="price-period">one-time build fee · care plan available</div>
+        <div class="price-divider"></div>
+        <ul class="price-list">
+          <li>6-page website</li>
+          <li>Photo & project gallery</li>
+          <li>Before & after portfolio section</li>
+          <li>Google Business Profile setup</li>
+          <li>Review showcase section</li>
+          <li>Advanced on-page SEO</li>
+          <li>Instant quote / estimate form</li>
+          <li>Service area map</li>
+          <li>Launch in 10 days</li>
+        </ul>
+        <a href="contact.html" class="price-btn">Get started</a>
+      </div>
+    </div>
+
+    <!-- ── COMPARISON TABLE ──────────────────────── -->
+    <div class="comparison-wrap reveal">
+      <h3>Full feature comparison</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th class="col-featured">Starter + Care</th>
+            <th>Growth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Professional website</td>
+            <td><span class="check">✓</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Mobile-first design</td>
+            <td><span class="check">✓</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Contact form</td>
+            <td><span class="check">✓</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Google Maps</td>
+            <td><span class="check">✓</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>SSL / HTTPS</td>
+            <td><span class="check">✓</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Number of pages</td>
+            <td>4</td>
+            <td class="col-featured">4</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Photo / project gallery</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="dash">—</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Before & after portfolio</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="dash">—</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Google Business Profile setup</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="dash">—</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Review showcase section</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="dash">—</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Hosting included</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="dash">—</span></td>
+          </tr>
+          <tr>
+            <td>Monthly content updates</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="dash">—</span></td>
+          </tr>
+          <tr>
+            <td>24/7 uptime monitoring</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="dash">—</span></td>
+          </tr>
+          <tr>
+            <td>Monthly analytics report</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="dash">—</span></td>
+          </tr>
+          <tr>
+            <td>Annual design refresh</td>
+            <td><span class="dash">—</span></td>
+            <td class="col-featured"><span class="check">✓</span></td>
+            <td><span class="dash">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── HOSTING NOTE ──────────────────────────────── -->
+  <section style="background:var(--foam-warm);padding:4rem 3rem;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+      <div class="reveal">
+        <div class="sec-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">Hosting & domains</span>
+        </div>
+        <h2>What about<br><em>after launch?</em></h2>
+        <p style="color:var(--basalt-soft);line-height:1.8;margin-top:1.25rem;font-size:0.93rem;">Websites need a home on the internet (hosting) and an address (domain). If you're on the Care Plan, hosting is included. For Starter and Growth builds, we help you set up affordable hosting — typically around $10–20/month — on a platform you own and control.</p>
+        <p style="color:var(--basalt-soft);line-height:1.8;margin-top:1rem;font-size:0.93rem;">Domains usually run $12–18/year. We'll help you register one if you don't have it already. You own everything — your domain, your hosting account, your site files.</p>
+      </div>
+      <div class="stat-grid reveal">
+        <div class="stat-cell">
+          <div class="stat-num">~$15</div>
+          <div class="stat-label">typical monthly hosting cost (you own it)</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">~$15</div>
+          <div class="stat-label">typical annual domain cost</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">$99</div>
+          <div class="stat-label">care plan — hosting, updates, monitoring all included</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">0</div>
+          <div class="stat-label">lock-in — cancel the care plan any time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────── -->
+  <section id="faq">
+    <div style="max-width:760px;margin:0 auto;">
+      <div class="sec-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Common questions</span>
+      </div>
+      <h2 class="reveal">Pricing FAQ.</h2>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-q">
+            What's included in the build fee — is there anything extra?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>The build fee covers design, development, copywriting assistance, contact form setup, basic SEO, and launch support. The only things not included are your domain name (typically ~$15/year, registered in your name) and hosting (typically ~$15/month, or included in the Care Plan). We'll walk you through both.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Do I own my website and domain?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Yes, completely. Your domain is registered in your name and your site files belong to you. If you ever want to move your site to a different developer or host, you can. We don't hold anything hostage. We believe in earning your business by being genuinely useful.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            What platform do you build on? Can I edit it myself later?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>We build on clean, fast HTML/CSS for most Starter sites, or platforms like WordPress / Webflow for Growth sites that need a content management system. If you want to update your own text or photos without calling us, we can set you up with an easy-to-use CMS. Just let us know during our initial call.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            What's included in the Care Plan's "monthly content updates"?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Each month you can send us text changes, new photos, updated service lists, pricing changes, new hours — anything that would normally require you to dig into the site. We make the update within 2 business days. Larger structural changes (adding new pages, redesigns) are scoped separately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            How does the revision process work?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>After we build your initial site, we'll share a preview link. You review it and send us your feedback — as detailed or as high-level as you want. We revise and send another preview. For Starter, you get 3 full rounds of revisions. In practice, most sites are finalized in 1–2 rounds. We're happy until you're happy.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Do I need to provide my own photos?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>It's always better to use real photos of your work — it builds trust and looks more authentic. But if you don't have any yet, we'll source high-quality licensed images that fit your trade and location. As you build up your own photo library, we can swap them in easily.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Can I add more pages or upgrade my package later?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. If you start with Starter and later want to add a gallery or a Google Business Profile setup, we can scope that as an add-on. You're not locked into what you start with. Many clients grow their sites over time as their business grows.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Is the free quote really free?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-a">
+            <p>Yes. No credit card, no obligation, no pressure. We have a 20-minute call, you tell us about your business, and we send you a clear breakdown of what we'd build and what it costs. If it's not the right fit, no hard feelings.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ──────────────────────────────────── -->
+  <div class="cta-band">
+    <div class="sec-eyebrow reveal" style="justify-content:center">
+      <span class="eyebrow-line"></span>
+      <span class="eyebrow-text" style="color:rgba(250,248,244,0.5)">Get started</span>
+      <span class="eyebrow-line"></span>
+    </div>
+    <h2 class="reveal">Not sure which plan<br>is right for you? <em>Ask us.</em></h2>
+    <p class="reveal">We'll help you figure out the best fit for your business and budget. Free quote, no obligation.</p>
+    <div class="cta-actions reveal">
+      <a href="contact.html" class="btn-primary">Talk to us →</a>
+      <a href="process.html" class="btn-ghost">See how it works</a>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Shoots<span>Sites</span></a>
+        <p>Professional websites for Hawaii tradespeople and small businesses. Fast. Honest. Built with aloha.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pricing.html">Starter Website</a></li>
+          <li><a href="pricing.html">Growth Package</a></li>
+          <li><a href="pricing.html">Care Plans</a></li>
+          <li><a href="contact.html">Free Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aloha@shootssites.com">aloha@shootssites.com</a></li>
+          <li><a href="contact.html">Talk Story Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 ShootsSites · Built with aloha for Hawaii</p>
+      <a href="mailto:aloha@shootssites.com" class="footer-email">aloha@shootssites.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
