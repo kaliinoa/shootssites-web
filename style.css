@@ -31,27 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── CURSOR ─────────────────────────────────── */
-* { cursor: none !important; }
-#cursor {
-  width: 10px; height: 10px;
-  background: var(--teal-mid);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9999;
-  transition: transform 0.15s ease, background 0.2s;
-  transform: translate(-50%, -50%);
-}
-#cursor-ring {
-  width: 36px; height: 36px;
-  border: 1.5px solid var(--teal-mid);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none; z-index: 9998;
-  opacity: 0.45;
-  transition: left 0.08s ease, top 0.08s ease, opacity 0.2s;
-  transform: translate(-50%, -50%);
-}
 
 /* ── NAV ─────────────────────────────────────── */
 nav {
@@ -209,17 +188,16 @@ section { padding: 6rem 3rem; }
 }
 
 /* ── MARQUEE ─────────────────────────────────── */
-.marquee-wrap { background: var(--basalt); padding: 0.9rem 0; overflow: hidden; }
-.marquee-track { display: flex; white-space: nowrap; animation: marquee 24s linear infinite; }
-.marquee-item { display: inline-flex; align-items: center; gap: 1rem; padding: 0 2rem; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,248,244,0.4); }
-.marquee-dot { width: 4px; height: 4px; background: var(--sand); border-radius: 50%; opacity: 0.5; flex-shrink: 0; }
+.marquee-wrap { background: var(--basalt); padding: 1.4rem 0; overflow: hidden; }
+.marquee-track { display: flex; white-space: nowrap; animation: marquee 28s linear infinite; }
+.marquee-item { display: inline-flex; align-items: center; gap: 1.25rem; padding: 0 2.5rem; font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,248,244,0.45); font-weight: 400; }
+.marquee-dot { width: 5px; height: 5px; background: var(--sand); border-radius: 50%; opacity: 0.6; flex-shrink: 0; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* ── HOMEPAGE HERO ───────────────────────────── */
 .hero {
   min-height: 100vh;
-  display: grid; grid-template-columns: 1fr 1fr;
-  align-items: center; gap: 4rem;
+  display: flex; align-items: center;
   padding: 0 3rem;
   position: relative; overflow: hidden;
 }
@@ -230,14 +208,14 @@ section { padding: 6rem 3rem; }
     radial-gradient(ellipse 50% 60% at -5% 100%, rgba(201,169,110,0.07) 0%, transparent 60%),
     var(--foam);
 }
-.hero-content { position: relative; z-index: 1; padding-top: 4rem; }
+.hero-content { position: relative; z-index: 1; padding-top: 4rem; max-width: 760px; }
 .hero-body {
-  font-size: 0.97rem; color: var(--basalt-soft);
-  line-height: 1.8; max-width: 440px; margin-top: 1.75rem;
+  font-size: 1.15rem; color: var(--basalt-soft);
+  line-height: 1.85; max-width: 580px; margin-top: 2rem;
   opacity: 0; animation: riseIn 0.8s 0.35s ease forwards;
 }
 .hero-actions {
-  display: flex; align-items: center; gap: 1.5rem; margin-top: 2.75rem;
+  display: flex; align-items: center; gap: 1.5rem; margin-top: 3rem;
   opacity: 0; animation: riseIn 0.8s 0.5s ease forwards;
 }
 .hero-visual {
@@ -284,9 +262,9 @@ section { padding: 6rem 3rem; }
 .steps-list { display: flex; flex-direction: column; }
 .step-item { display: grid; grid-template-columns: 48px 1fr; gap: 1.5rem; padding: 2rem 0; border-bottom: 1px solid rgba(28,26,24,0.08); }
 .step-item:last-child { border-bottom: none; }
-.step-n { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--sand); padding-top: 4px; }
-.step-item h3 { font-size: 1.3rem; color: var(--basalt); margin-bottom: 0.4rem; }
-.step-item p { font-size: 0.86rem; color: var(--basalt-soft); line-height: 1.7; }
+.step-n { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--sand); padding-top: 6px; }
+.step-item h3 { font-size: 1.5rem; color: var(--basalt); margin-bottom: 0.6rem; }
+.step-item p { font-size: 0.95rem; color: var(--basalt-soft); line-height: 1.8; }
 
 /* ── PORTFOLIO GRID ──────────────────────────── */
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
@@ -585,8 +563,6 @@ footer {
 
   .cta-actions { flex-direction: column; align-items: center; }
 
-  #cursor, #cursor-ring { display: none; }
-  * { cursor: auto !important; }
 }
 
 @media (max-width: 600px) {
