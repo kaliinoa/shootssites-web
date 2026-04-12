@@ -251,7 +251,7 @@ section { padding: 6rem 3rem; }
 }
 .problem-cell { background: var(--basalt-mid); padding: 2.5rem; transition: background 0.25s; }
 .problem-cell:hover { background: var(--basalt-soft); }
-.problem-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; color: rgba(201,169,110,0.22); line-height: 1; margin-bottom: 0.75rem; }
+.problem-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 600; color: var(--sand); line-height: 1; margin-bottom: 0.75rem; }
 .problem-cell h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.2rem; color: var(--foam); margin-bottom: 0.5rem; }
 .problem-cell p { font-size: 0.85rem; color: rgba(250,248,244,0.45); line-height: 1.7; }
 

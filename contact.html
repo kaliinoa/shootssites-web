@@ -100,7 +100,8 @@
           <h3>Talk story with us</h3>
           <p>Takes about 2 minutes. The more detail the better — but whatever you share is a start.</p>
         </div>
-        <form class="contact-form-inner" action="mailto:aloha@shootssites.com" method="get" enctype="text/plain">
+        <form class="contact-form-inner" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
           <div class="form-row">
             <div class="form-field">
               <label>Your name</label>
