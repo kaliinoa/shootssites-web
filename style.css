@@ -514,8 +514,9 @@ footer {
 
 /* ── ANIMATIONS ──────────────────────────────── */
 @keyframes riseIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal { transition: opacity 0.7s ease, transform 0.7s ease; }
+.js-loaded .reveal { opacity: 0; transform: translateY(18px); }
+.js-loaded .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ── RESPONSIVE ──────────────────────────────── */
 @media (max-width: 1024px) {
