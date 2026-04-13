@@ -100,8 +100,9 @@
           <h3>Talk story with us</h3>
           <p>Takes about 2 minutes. The more detail the better — but whatever you share is a start.</p>
         </div>
-        <form class="contact-form-inner" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+        <form class="contact-form-inner" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
           <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field">
           <div class="form-row">
             <div class="form-field">
               <label>Your name</label>
@@ -133,7 +134,7 @@
           </div>
           <div class="form-field">
             <label>Email</label>
-            <input type="email" name="email" placeholder="your@email.com">
+            <input type="email" name="email" placeholder="your@email.com" required>
           </div>
           <div class="form-field">
             <label>Which package interests you?</label>
