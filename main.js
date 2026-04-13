@@ -3,15 +3,17 @@
    ───────────────────────────────────────────── */
 
 // ── SCROLL REVEAL ────────────────────────────
+document.documentElement.classList.add('js-loaded');
+
 const reveals  = document.querySelectorAll('.reveal');
 const revealOb = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
+  entries.forEach(e => {
     if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 90);
+      e.target.classList.add('visible');
       revealOb.unobserve(e.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(r => revealOb.observe(r));
 
 // ── NAV SCROLL SHRINK ────────────────────────
