@@ -409,7 +409,7 @@ section { padding: 6rem 3rem; }
 .value-cell h3 { font-size: 1.1rem; color: var(--basalt); margin-bottom: 0.4rem; }
 .value-cell p { font-size: 0.82rem; color: var(--basalt-soft); line-height: 1.65; }
 
-.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3.5rem; }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3.5rem; }
 .why-item { padding: 2rem; background: var(--white); border-radius: 4px; border: 1px solid rgba(28,26,24,0.07); }
 .why-item h3 { font-size: 1.1rem; color: var(--basalt); margin-bottom: 0.6rem; }
 .why-item p { font-size: 0.83rem; color: var(--basalt-soft); line-height: 1.65; }
@@ -511,6 +511,340 @@ footer {
 .footer-copy { font-size: 0.7rem; color: rgba(250,248,244,0.22); letter-spacing: 0.04em; }
 .footer-email { color: var(--sand); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
 .footer-email:hover { color: var(--foam); }
+
+/* ── PORTFOLIO BROWSER MOCKUPS ───────────────── */
+
+/* ── Base structure ── */
+.mock-browser {
+  position: absolute; top: 0; left: 0;
+  width: 600px; height: 300px;
+  transform: scale(0.6); transform-origin: top left;
+  border-radius: 6px; overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  font-family: 'DM Sans', sans-serif;
+}
+.mock-chrome {
+  height: 28px; background: #d9d9d9;
+  display: flex; align-items: center; gap: 8px; padding: 0 10px;
+}
+.mock-dots { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
+.mock-dot { width: 10px; height: 10px; border-radius: 50%; }
+.mock-dot--r { background: #ff5f57; }
+.mock-dot--y { background: #febc2e; }
+.mock-dot--g { background: #28c840; }
+.mock-url-bar {
+  flex: 1; height: 16px; background: #fff; border-radius: 8px;
+  display: flex; align-items: center; padding: 0 8px;
+  font-size: 9px; color: #888; font-family: 'DM Sans', sans-serif;
+  overflow: hidden; white-space: nowrap;
+}
+
+/* ── Mock site shell ── */
+.mock-site { height: 272px; overflow: hidden; display: flex; flex-direction: column; }
+
+/* ── Nav ── */
+.mock-nav {
+  height: 38px; flex-shrink: 0;
+  display: flex; align-items: center;
+  justify-content: space-between; padding: 0 16px;
+}
+.mock-logo { font-size: 13px; font-weight: 600; white-space: nowrap; }
+.mock-nav-links { display: flex; gap: 12px; align-items: center; }
+.mock-nav-link { font-size: 10px; opacity: 0.82; }
+.mock-nl--light .mock-nav-link { color: rgba(255,255,255,0.85); }
+.mock-nl--dark .mock-nav-link  { color: rgba(30,26,22,0.7); }
+.mock-nl--yellow .mock-nav-link { color: #f0b429; }
+.mock-cta {
+  font-size: 10px; font-weight: 500;
+  padding: 4px 10px; border-radius: 3px; white-space: nowrap;
+}
+
+/* ── Full-width hero base ── */
+.mock-hero {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; padding: 0 20px;
+  overflow: hidden;
+}
+
+/* ── Two-column hero ── */
+.mock-hero-2col {
+  flex: 1; display: flex; overflow: hidden;
+}
+.mock-hero-left {
+  flex: 0 0 62%; display: flex; flex-direction: column;
+  justify-content: center; padding: 14px 18px;
+}
+.mock-hero-right {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  font-size: 52px; overflow: hidden;
+}
+
+/* ── Eyebrow ── */
+.mock-eyebrow {
+  font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 7px; font-weight: 500;
+}
+.mock-ew--light  { color: rgba(255,255,255,0.65); }
+.mock-ew--yellow { color: #f0b429; }
+.mock-ew--lime   { color: #8de45a; }
+.mock-ew--mint   { color: #52b788; }
+.mock-ew--warm   { color: rgba(201,169,110,0.9); }
+.mock-ew--muted  { color: rgba(30,26,22,0.45); }
+
+/* ── Hero headline ── */
+.mock-hero-hl {
+  font-size: 22px; font-weight: 600; line-height: 1.18;
+  margin-bottom: 7px;
+}
+.mock-hhl--white  { color: #fff; }
+.mock-hhl--dark   { color: #1e1a16; }
+.mock-hhl--warm   { color: #e8d5b7; }
+.mock-hhl--forest { color: #1b4332; }
+
+/* ── Hero sub-line ── */
+.mock-hero-sub { font-size: 11px; }
+.mock-hsub--light { color: rgba(255,255,255,0.75); }
+.mock-hsub--dim   { color: rgba(255,255,255,0.5); }
+.mock-hsub--mint  { color: #52b788; }
+.mock-hsub--muted { color: rgba(30,26,22,0.5); }
+.mock-hsub--warm  { color: rgba(201,169,110,0.85); }
+
+/* ── Hero CTA button ── */
+.mock-hero-btn {
+  align-self: flex-start; font-size: 10px; font-weight: 600;
+  padding: 5px 14px; border-radius: 3px; margin-top: 6px;
+}
+
+/* ── Bottom bar base ── */
+.mock-bottom { height: 108px; flex-shrink: 0; overflow: hidden; }
+
+/* ── Shared feature cells (plumbing) ── */
+.mock-feature { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.mock-feature-icon { font-size: 22px; line-height: 1; }
+.mock-feature-lbl { font-size: 10px; color: #4a4540; }
+
+/* ── Shared badge cells (electrical) ── */
+.mock-badge {
+  flex: 1; border-radius: 4px;
+  height: 72px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 5px;
+}
+.mock-badge-icon { font-size: 18px; }
+.mock-badge-lbl { font-size: 10px; font-weight: 500; text-align: center; line-height: 1.3; }
+
+/* ── Tags (HVAC / Contracting / Painting) ── */
+.mock-tag {
+  display: inline-block; font-size: 10px; font-weight: 500;
+  padding: 4px 12px; border-radius: 20px;
+}
+
+/* ── Stat items (Roofing) ── */
+.mock-stat-item { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.mock-stat-num { font-size: 22px; font-weight: 700; line-height: 1; }
+.mock-stat-lbl { font-size: 9px; text-transform: uppercase; letter-spacing: 0.07em; }
+.mock-stat-divider { width: 1px; height: 44px; background: rgba(255,255,255,0.2); }
+
+/* ── Cleaning tiers ── */
+.mock-clean-tier { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.mock-clean-tier-lbl { font-size: 11px; font-weight: 600; }
+.mock-clean-tier-sub { font-size: 10px; }
+
+/* ── Paint swatches (Painting) ── */
+.mock-swatches {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6px; padding: 10px;
+  width: 80px; height: 80px;
+}
+.mock-swatch { border-radius: 4px; }
+.mock-sw-1 { background: #d4a5a5; }
+.mock-sw-2 { background: #a5c4d4; }
+.mock-sw-3 { background: #b5d4a5; }
+.mock-sw-4 { background: #d4c9a5; }
+
+/* ── Pest types (Pest Control) ── */
+.mock-pest-type { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.mock-pest-icon { font-size: 20px; line-height: 1; }
+.mock-pest-lbl { font-size: 10px; font-weight: 500; }
+
+/* ── Before/After (Landscaping) ── */
+.mock-ba-label {
+  font-size: 12px; font-weight: 500; padding: 6px 18px; border-radius: 20px;
+}
+.mock-ba-before { background: rgba(45,106,79,0.12); color: #2d6a4f; }
+.mock-ba-after  { background: #52b788; color: #fff; }
+.mock-ba-arrow  { color: #52b788; font-size: 16px; }
+.mock-ba-count  { font-size: 10px; color: rgba(45,106,79,0.65); font-weight: 500; }
+
+/* ══════════════════════════════════════
+   TRADE-SPECIFIC STYLES
+   ══════════════════════════════════════ */
+
+/* ── PLUMBING ── */
+.mock-nav--plumbing  { background: #0a2240; }
+.mock-logo--plumbing { color: #c9a96e; }
+.mock-cta--plumbing  { background: #c9a96e; color: #0a2240; }
+.mock-hl--plumbing   { background: #0d3358; }
+.mock-hr--plumbing   { background: #1e6fa0; }
+.mock-bottom--plumbing {
+  background: #fff; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px;
+}
+
+/* ── ELECTRICAL ── */
+.mock-nav--electrical  { background: #1a1a1a; }
+.mock-logo--electrical { color: #f0b429; }
+.mock-cta--electrical  { background: #f0b429; color: #1a1a1a; }
+.mock-hero--electrical {
+  background: linear-gradient(135deg, #1a1a1a 60%, #2c2c2c 100%);
+  padding: 0; position: relative;
+}
+.mock-hero-accent-bar {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: #f0b429;
+}
+.mock-hero-inner-elec {
+  display: flex; align-items: center; gap: 18px;
+  padding: 16px 22px;
+}
+.mock-bolt { font-size: 34px; line-height: 1; flex-shrink: 0; }
+.mock-bottom--electrical {
+  background: #111; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px; gap: 12px;
+}
+.mock-bottom--electrical .mock-badge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(240,180,41,0.3);
+}
+.mock-bottom--electrical .mock-badge-lbl { color: #f0b429; }
+
+/* ── LANDSCAPING ── */
+.mock-nav--landscape  { background: #2d6a4f; }
+.mock-logo--landscape { color: #fff; }
+.mock-cta--landscape  { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.55); }
+.mock-hl--landscape   { background: #1b4332; }
+.mock-hr--landscape   { background: #52b788; }
+.mock-bottom--landscape {
+  background: #f4fbf7; display: flex; align-items: center;
+  justify-content: center; gap: 16px; padding: 0 20px;
+}
+
+/* ── ROOFING ── */
+.mock-nav--roofing  { background: #2c3440; }
+.mock-logo--roofing { color: #e8e0d4; }
+.mock-cta--roofing  { background: #e74c3c; color: #fff; }
+.mock-hero--roofing {
+  background: linear-gradient(160deg, #1c2b3a 0%, #2e3f52 60%, #374a5e 100%);
+  padding: 14px 20px 8px; justify-content: flex-start;
+}
+.mock-hero-inner-roof {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.mock-roof-icon { font-size: 36px; line-height: 1; flex-shrink: 0; }
+.mock-hbtn--roofing {
+  background: #e74c3c; color: #fff;
+  font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 3px;
+  display: inline-block;
+}
+.mock-bottom--roofing {
+  background: #162233; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px;
+}
+.mock-sn--roofing { color: #e8e0d4; }
+.mock-sl--roofing { color: rgba(232,224,212,0.5); }
+
+/* ── HVAC ── */
+.mock-nav--hvac  { background: #0b3d6e; }
+.mock-logo--hvac { color: #fff; }
+.mock-cta--hvac  { background: #29b6d1; color: #fff; }
+.mock-hl--hvac   { background: #0a3360; }
+.mock-hr--hvac   { background: linear-gradient(135deg, #1e88e5, #29b6d1); }
+.mock-bottom--hvac {
+  background: #f0f7ff; display: flex; align-items: center;
+  justify-content: center; gap: 8px; padding: 0 16px;
+  flex-wrap: wrap;
+}
+.mock-tag--hvac { background: rgba(41,182,209,0.12); color: #0b3d6e; border: 1px solid rgba(41,182,209,0.3); }
+
+/* ── CONTRACTING ── */
+.mock-nav--contracting  { background: #252018; }
+.mock-logo--contracting { color: #e8d5b7; }
+.mock-cta--contracting  { background: #c9a96e; color: #1c1a16; }
+.mock-hl--contracting   { background: #1c1a16; }
+.mock-hr--contracting   { background: #333028; }
+.mock-bottom--contracting {
+  background: #1c1a16; display: flex; align-items: center;
+  justify-content: center; gap: 8px; padding: 0 16px;
+  flex-wrap: wrap;
+}
+.mock-tag--contracting { background: rgba(201,169,110,0.15); color: #c9a96e; border: 1px solid rgba(201,169,110,0.3); }
+
+/* ── CLEANING ── */
+.mock-nav--cleaning  { background: #fff; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.mock-logo--cleaning { color: #2d6a4f; }
+.mock-cta--cleaning  { background: #2d6a4f; color: #fff; }
+.mock-hero--cleaning {
+  background: linear-gradient(150deg, #f0faf5 0%, #e8f7f0 100%);
+  padding: 12px 20px 6px; justify-content: flex-start;
+}
+.mock-hero-clean-inner {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 6px;
+}
+.mock-sparkle { font-size: 28px; line-height: 1; flex-shrink: 0; }
+.mock-hbtn--cleaning {
+  background: #2d6a4f; color: #fff;
+  font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 3px;
+  display: inline-block;
+}
+.mock-bottom--cleaning {
+  background: #fff; border-top: 1px solid rgba(45,106,79,0.12);
+  display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px;
+}
+.mock-clean-tier-lbl { color: #2d6a4f; }
+.mock-clean-tier-sub { color: rgba(30,26,22,0.5); }
+
+/* ── PAINTING ── */
+.mock-nav--painting  { background: #faf8f4; border-bottom: 1px solid rgba(0,0,0,0.07); }
+.mock-logo--painting { color: #2c2820; }
+.mock-cta--painting  { background: #2c2820; color: #faf8f4; }
+.mock-hl--painting   { background: #f5f0e8; }
+.mock-hr--painting   {
+  background: #ede8df; display: flex;
+  align-items: center; justify-content: center;
+}
+.mock-bottom--painting {
+  background: #faf8f4; border-top: 1px solid rgba(0,0,0,0.06);
+  display: flex; align-items: center;
+  justify-content: center; gap: 8px; padding: 0 16px;
+}
+.mock-tag--painting { background: rgba(44,40,32,0.07); color: #2c2820; border: 1px solid rgba(44,40,32,0.14); }
+
+/* ── PEST CONTROL ── */
+.mock-nav--pest  { background: #0f1f0f; }
+.mock-logo--pest { color: #7cbc5e; }
+.mock-cta--pest  { background: #7cbc5e; color: #0f1f0f; }
+.mock-hero--pest {
+  background: #0d1a0d;
+  background-image: repeating-linear-gradient(
+    0deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 28px),
+    repeating-linear-gradient(
+    90deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 28px);
+  padding: 0 20px;
+}
+.mock-hero-inner-pest {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.mock-pest-badge {
+  background: #7cbc5e; color: #0f1f0f;
+  font-size: 9px; font-weight: 700; text-align: center; line-height: 1.3;
+  padding: 8px 10px; border-radius: 4px; flex-shrink: 0;
+}
+.mock-bottom--pest {
+  background: #162516; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px;
+}
+.mock-pest-lbl { color: rgba(200,240,180,0.8); }
 
 /* ── TRUST BAR ───────────────────────────────── */
 .trust-bar {
