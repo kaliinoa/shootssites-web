@@ -409,7 +409,7 @@ section { padding: 6rem 3rem; }
 .value-cell h3 { font-size: 1.1rem; color: var(--basalt); margin-bottom: 0.4rem; }
 .value-cell p { font-size: 0.82rem; color: var(--basalt-soft); line-height: 1.65; }
 
-.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3.5rem; }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3.5rem; }
 .why-item { padding: 2rem; background: var(--white); border-radius: 4px; border: 1px solid rgba(28,26,24,0.07); }
 .why-item h3 { font-size: 1.1rem; color: var(--basalt); margin-bottom: 0.6rem; }
 .why-item p { font-size: 0.83rem; color: var(--basalt-soft); line-height: 1.65; }
