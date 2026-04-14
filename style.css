@@ -512,6 +512,109 @@ footer {
 .footer-email { color: var(--sand); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
 .footer-email:hover { color: var(--foam); }
 
+/* ── PORTFOLIO BROWSER MOCKUPS ───────────────── */
+.mock-browser {
+  position: absolute; top: 0; left: 0;
+  width: 600px; height: 300px;
+  transform: scale(0.6); transform-origin: top left;
+  border-radius: 6px; overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.mock-chrome {
+  height: 28px; background: #d9d9d9;
+  display: flex; align-items: center; gap: 8px; padding: 0 10px;
+}
+.mock-dots { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
+.mock-dot { width: 10px; height: 10px; border-radius: 50%; }
+.mock-dot--r { background: #ff5f57; }
+.mock-dot--y { background: #febc2e; }
+.mock-dot--g { background: #28c840; }
+.mock-url-bar {
+  flex: 1; height: 16px; background: #fff; border-radius: 8px;
+  display: flex; align-items: center; padding: 0 8px;
+  font-size: 9px; color: #888; font-family: 'DM Sans', sans-serif;
+  overflow: hidden; white-space: nowrap;
+}
+.mock-site { height: 272px; overflow: hidden; }
+.mock-nav {
+  height: 38px; display: flex; align-items: center;
+  justify-content: space-between; padding: 0 16px;
+}
+.mock-logo { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; }
+.mock-cta {
+  font-size: 10px; font-family: 'DM Sans', sans-serif; font-weight: 500;
+  padding: 4px 10px; border-radius: 3px;
+}
+.mock-hero {
+  height: 126px; display: flex; flex-direction: column;
+  justify-content: center; padding: 0 20px;
+}
+.mock-hero-hl { font-family: 'DM Sans', sans-serif; font-weight: 500; line-height: 1.2; margin-bottom: 8px; }
+.mock-hero-sub { font-family: 'DM Sans', sans-serif; font-size: 11px; }
+.mock-bottom { height: 108px; }
+
+/* Plumbing */
+.mock-nav--plumbing { background: #0a2240; }
+.mock-logo--plumbing { color: #fff; }
+.mock-cta--plumbing { background: #c9a96e; color: #fff; }
+.mock-hero--plumbing { background: #1a7fa0; }
+.mock-hero-hl--plumbing { color: #fff; font-size: 22px; }
+.mock-hero-sub--plumbing { color: rgba(255,255,255,0.75); }
+.mock-bottom--plumbing {
+  background: #fff; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px;
+}
+.mock-feature { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.mock-feature-icon { font-size: 22px; line-height: 1; }
+.mock-feature-lbl { font-size: 10px; color: #4a4540; font-family: 'DM Sans', sans-serif; }
+
+/* Electrical */
+.mock-nav--electrical { background: #1a1a1a; }
+.mock-logo--electrical { color: #f0b429; }
+.mock-cta--electrical { background: #f0b429; color: #1a1a1a; }
+.mock-hero--electrical { background: #2a2a2a; align-items: flex-start; }
+.mock-bolt { font-size: 28px; line-height: 1; margin-bottom: 6px; }
+.mock-hero-hl--electrical { color: #f0b429; font-size: 20px; }
+.mock-hero-sub--electrical { color: rgba(255,255,255,0.5); margin-top: 4px; }
+.mock-bottom--electrical {
+  background: #1a1a1a; display: flex; align-items: center;
+  justify-content: space-around; padding: 0 20px; gap: 12px;
+}
+.mock-badge {
+  flex: 1; background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(240,180,41,0.3); border-radius: 4px;
+  height: 72px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 5px;
+}
+.mock-badge-icon { font-size: 18px; }
+.mock-badge-lbl {
+  color: #f0b429; font-size: 10px; font-family: 'DM Sans', sans-serif;
+  font-weight: 500; text-align: center; line-height: 1.3;
+}
+
+/* Landscaping */
+.mock-nav--landscape { background: #2d6a4f; }
+.mock-logo--landscape { color: #fff; }
+.mock-cta--landscape {
+  background: transparent; color: #fff;
+  border: 1px solid rgba(255,255,255,0.55);
+}
+.mock-hero--landscape { background: #1b4332; }
+.mock-leaf { font-size: 26px; line-height: 1; margin-bottom: 8px; }
+.mock-hero-hl--landscape { color: #fff; font-size: 20px; }
+.mock-hero-sub--landscape { color: rgba(255,255,255,0.65); margin-top: 4px; }
+.mock-bottom--landscape {
+  background: #f9f7f4; display: flex; align-items: center;
+  justify-content: center; gap: 16px;
+}
+.mock-ba-label {
+  font-size: 12px; font-family: 'DM Sans', sans-serif;
+  font-weight: 500; padding: 6px 18px; border-radius: 20px;
+}
+.mock-ba-before { background: rgba(45,106,79,0.12); color: #2d6a4f; }
+.mock-ba-after { background: #52b788; color: #fff; }
+.mock-ba-arrow { color: #52b788; font-size: 16px; font-family: 'DM Sans', sans-serif; }
+
 /* ── TRUST BAR ───────────────────────────────── */
 .trust-bar {
   background: var(--foam-warm);
