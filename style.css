@@ -398,6 +398,18 @@ section { padding: 6rem 3rem; }
 .about-story-wrap {
   display: grid; grid-template-columns: 1fr 1.2fr; gap: 7rem; align-items: start;
 }
+/* ── ABOUT HEADSHOT ──────────────────────────── */
+.about-headshot-wrap {
+  border-radius: 4px; overflow: hidden;
+  box-shadow: 0 8px 40px rgba(28,26,24,0.13);
+  aspect-ratio: 4 / 5; max-width: 100%;
+}
+.about-headshot {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+}
+
 .about-story-text h2 { margin-bottom: 2rem; }
 .about-story-text p { color: var(--basalt-soft); line-height: 1.85; font-size: 0.95rem; margin-bottom: 1.25rem; }
 .about-story-text p:last-of-type { margin-bottom: 0; }
