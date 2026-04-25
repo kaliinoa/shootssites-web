@@ -320,6 +320,7 @@ section { padding: 6rem 3rem; }
 .about-profile-inner {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 5rem; align-items: stretch; max-width: 1100px;
+  margin: 0 auto;
 }
 .about-profile-left { display: flex; flex-direction: column; }
 .about-profile-img-wrap { margin-bottom: 1.75rem; }
