@@ -273,6 +273,12 @@ section { padding: 6rem 3rem; }
 .portfolio-thumb { height: 180px; background: var(--foam-deep); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .portfolio-thumb-inner { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 600; color: var(--basalt-soft); opacity: 0.25; }
 .portfolio-coming { position: absolute; bottom: 0.75rem; left: 0.75rem; background: var(--basalt); color: var(--foam); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 2px; }
+.portfolio-live-badge { position: absolute; bottom: 0.75rem; left: 0.75rem; background: var(--teal-deep); color: var(--foam); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+.portfolio-live-badge:hover { background: var(--basalt); }
+.mock-screenshot { width: 600px; height: 272px; object-fit: cover; object-position: top center; display: block; }
+.portfolio-testimonial { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgba(28,26,24,0.07); }
+.portfolio-testimonial p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--basalt); line-height: 1.65; margin-bottom: 0.5rem; }
+.portfolio-testimonial cite { font-size: 0.78rem; color: var(--basalt-soft); font-style: normal; }
 .portfolio-body { padding: 1.5rem; }
 .portfolio-industry { font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sand); font-weight: 500; margin-bottom: 0.4rem; }
 .portfolio-body h3 { font-size: 1.1rem; color: var(--basalt); margin-bottom: 0.4rem; }
