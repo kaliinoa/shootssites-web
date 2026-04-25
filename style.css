@@ -319,7 +319,7 @@ section { padding: 6rem 3rem; }
 }
 .about-profile-inner {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 5rem; align-items: start; max-width: 1100px;
+  gap: 5rem; align-items: stretch; max-width: 1100px;
 }
 .about-profile-left { display: flex; flex-direction: column; }
 .about-profile-img-wrap { margin-bottom: 1.75rem; }
@@ -353,14 +353,15 @@ section { padding: 6rem 3rem; }
 /* Harvard credibility — right column */
 .about-profile-right { display: flex; flex-direction: column; }
 .about-harvard-img {
-  width: 100%; border-radius: 6px; display: block;
-  object-fit: cover; object-position: center top;
+  width: 100%; flex: 1; border-radius: 6px; display: block;
+  object-fit: cover; object-position: center 20%;
   box-shadow: 0 12px 48px rgba(28,26,24,0.14);
+  min-height: 0;
 }
 .about-harvard-caption {
   font-size: 0.78rem; color: var(--basalt-soft);
   font-style: italic; margin-top: 0.75rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; flex-shrink: 0;
 }
 
 /* Homepage founder mini strip */
